@@ -1,21 +1,15 @@
 # StreamPractice
 
-**TODO: Add description**
+Use `StreamPractice.Seeds.generate_some_random_data/1` inside iex to generate some data so we can
+easily evaluate the difference between working with Enums and Streams (100k units is a suggestion).
+
+Check out `StreamPractice.Streams` module functions and debug it to see the results.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `stream_practice` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:stream_practice, "~> 0.1.0"}
-  ]
-end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/stream_practice>.
-
+docker-compose up -d
+mix deps.get
+mix ecto.create
+iex -S mix
+```
